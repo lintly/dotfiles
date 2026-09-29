@@ -20,7 +20,6 @@ dotfiles/
 │   ├── projects.json              # Registered project metadata
 │   ├── extensions/                # Installed Gemini CLI extensions
 │   │   ├── extension-enablement.json
-│   │   └── code-review/           # Automated code review extension (/code-review, /pr-code-review)
 │   └── skills/                    # Custom agent skills for specialized developer workflows
 │       ├── anal/                  # Specialized GitHub PR review for Plainsight tech stack
 │       ├── api-validator/         # OpenAPI generation, SQLC update, Go formatting & validation
