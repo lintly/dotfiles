@@ -1,0 +1,7 @@
+{
+  "code-review": {
+    "overrides": [
+      "/Users/lintly/.psgemini/*"
+    ]
+  }
+}

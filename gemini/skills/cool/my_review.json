@@ -1,0 +1,17 @@
+{
+  "event": "COMMENT",
+  "body": "### Code Review Summary\n\nThe PR is exceptionally clean, correct, and well-justified. It resolves non-deterministic pnpm version resolution in CI and avoids potential setup-action breaks by pinning pnpm via the `packageManager` field in `package.json` and removing the hardcoded `version` input in the workflow.\n\nNo security vulnerabilities, performance bottlenecks, or logical bugs were found. Below are two minor, constructive recommendations to further align the repository with modern Node/pnpm best practices and follow the DRY principle.",
+  "commit_id": "9a57afed43b5c0678287501af1306cf8bad4e60d",
+  "comments": [
+    {
+      "path": ".github/workflows/deploy.yml",
+      "line": 35,
+      "body": "### Recommendation: DRY Build Execution\n\nIn consistency with the scripts defined in `package.json`, consider updating the build step to use the package manager script instead of executing Slidev directly with `pnpm exec`:\n\n```yaml\n- run: pnpm run build\n```\n\nThis centralizes command flags and configurations inside `package.json` so future updates only need to be made in one place."
+    },
+    {
+      "path": "package.json",
+      "line": 5,
+      "body": "### Recommendation: Specify Supported Node.js Engines\n\nSince the CI workflow (`deploy.yml`) is pinned to Node.js v22, it is recommended to define the expected Node.js version range under the `engines` field in `package.json` to prevent local environment discrepancies:\n\n```json\n\"engines\": {\n  \"node\": \">=22.0.0\"\n}\n```"
+    }
+  ]
+}

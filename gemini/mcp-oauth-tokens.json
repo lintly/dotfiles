@@ -1,0 +1,16 @@
+[
+  {
+    "serverName": "atlassian-mcp",
+    "token": {
+      "accessToken": "712020-8682b61a-388b-4fec-ac59-9197f3f2489d:UuuyFUSQoqvBF6Pa:y1XXVGz6ystGxhr_wL5Jq45a0I9IhMUh",
+      "tokenType": "bearer",
+      "refreshToken": "712020-8682b61a-388b-4fec-ac59-9197f3f2489d:UuuyFUSQoqvBF6Pa:XpWGBakISf2-O7DfF6XaX45dK8TesHwc",
+      "scope": "",
+      "expiresAt": 1790643503418
+    },
+    "clientId": "Dwd-T1dVu7EQQkIr",
+    "tokenUrl": "https://mcp.atlassian.com/v1/token",
+    "mcpServerUrl": "https://mcp.atlassian.com/v1/sse",
+    "updatedAt": 1790615183456
+  }
+]

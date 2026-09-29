@@ -1,0 +1,15 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "vertex-ai"
+    }
+  },
+  "ui": {
+    "errorVerbosity": "low"
+  },
+  "mcpServers": {
+    "atlassian-mcp": {
+      "url": "https://mcp.atlassian.com/v1/sse"
+    }
+  }
+}

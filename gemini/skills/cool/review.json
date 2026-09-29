@@ -1,0 +1,6 @@
+{
+  "event": "APPROVE",
+  "body": "### Code Review Summary\n\nLGTM! 🚀\n\n- **Feature Flagging**: `mediaCredentials.enabled` defaults to `false` in `values.yaml`, preserving backward compatibility for environments without credentials.\n- **Resilience**: `secretKeyRef` uses `optional: true` matching the established pattern in the deployment template.\n- **Configuration**: Clean configuration of `PLAINSIGHT_MEDIA_REGION` and `mediaCredentials` in `cluster-lab-dev.yaml`.\n- **Documentation**: Clear comments explaining `infrastructure#472` dependency and secret snapshotting lifecycle.",
+  "commit_id": "269d3dfaeb956e6fe12a5549fabe4566ad8555ab",
+  "comments": []
+}
